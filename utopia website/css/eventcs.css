@@ -1,0 +1,389 @@
+/* fonts.css */
+@font-face {
+    font-family: 'Bernoru';
+    src: url('../assets/fonts/bernoru-blackultraexpanded.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../assets/fonts/Futura PT Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Glacialreg';
+    src: url('../assets/fonts/GlacialIndifference-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Glacialbold';
+    src: url('../assets/fonts/GlacialIndifference-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../assets/fonts/PPTelegraf-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* base.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* navbar.css */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#navbar.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#nav-logo {
+    height: 50px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#navbar.scrolled #nav-logo {
+    opacity: 1;
+}
+
+/* hamburger-menu.css */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.line {
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.line1 { width: 80%; align-self: flex-end; }
+.line2 { width: 100%; }
+.line3 { width: 60%; align-self: flex-start; }
+
+.hamburger.active .line1 {
+    transform: translateY(8px) rotate(45deg);
+    width: 100%;
+}
+
+.hamburger.active .line2 {
+    opacity: 0;
+}
+
+.hamburger.active .line3 {
+    transform: translateY(-8px) rotate(-45deg);
+    width: 100%;
+}
+
+/* menu-overlay.css */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    z-index: 999;
+}
+
+.menu-overlay::before {
+    content: "";
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 380px;
+    height: 380px;
+    background-image: url('../assets/saturnhalf-removebg-preview.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1000;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-content {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.menu-content ul {
+    list-style: none;
+}
+
+.menu-content li {
+    margin-bottom: 20px;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.menu-overlay.active .menu-content li {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Staggered animation for menu items */
+.menu-overlay.active .menu-content li:nth-child(1) { transition-delay: 0.1s; }
+.menu-overlay.active .menu-content li:nth-child(2) { transition-delay: 0.2s; }
+.menu-overlay.active .menu-content li:nth-child(3) { transition-delay: 0.3s; }
+.menu-overlay.active .menu-content li:nth-child(4) { transition-delay: 0.4s; }
+
+.menu-content a {
+    font-family: 'Bernoru';
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+    font-size: 28px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.menu-content a:hover {
+    transform: scale(1.05);
+}
+
+/* content.css */
+.content {
+    margin-top: 60px; /* Adjusted for navbar height */
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+
+/* classicdiv.css */
+.classicdiv {
+    position: relative;
+    width: 100%;
+    background: #f3f3f3;
+    padding: 10px 0;
+    margin-bottom: 10px; /* Reduced space between divs */
+}
+
+.text-small {
+    font-family: 'Glacialbold';
+    font-size: 17px;
+    color: #333;
+    padding: 10px 25px;
+    text-decoration: underline;
+}
+
+.text-big {
+    font-family: 'Futura';
+    font-size: 44px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 38px;
+    padding: 0 25px 10px;
+}
+
+.text-exp {
+    font-family: 'Glacialreg';
+    font-size: 17px;
+    color: #333;
+    padding: 0 25px 20px;
+}
+
+/* carousel.css */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.text-img {
+    position: absolute;
+    left: 15px;
+    bottom: 40px;
+    font-family: 'Glacialreg';
+    font-size: 15px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    z-index: 2;
+}
+
+.image-button {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    font-family: 'Glacialreg';
+    background: rgba(243, 243, 243, 0.837);
+    color: black;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 25px;
+    font-size: 13px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 2;
+    transition: transform 0.2s ease;
+}
+
+.image-button:active {
+    transform: scale(1.07);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* footer.css */
+.footer {
+    position: relative;
+    width: 100%;
+    background: #101010;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.logo-space {
+    width: 80px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    width: 100%;
+    height: auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.platform-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-right {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+
+/* Add this to your base.css or a new interactive.css file */
+a, button, [role="button"], [tabindex], .clickable {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none !important;
+    text-decoration: none;
+}
+
+/* Specifically for anchor tags in your menu */
+.menu-content a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* For buttons */
+button, .image-button, .simp-button {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    border: none;
+    background: none;
+}
+
+/* For hamburger menu */
+.hamburger {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* For logo link */
+#navbar a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}

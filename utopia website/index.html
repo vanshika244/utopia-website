@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="assets/uticon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utopia Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/solar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="index.html" style="display: flex; align-items: center;">
+            <img src="assets/logozoom.png" alt="Logo" id="nav-logo">
+        </a>
+        <div class="hamburger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+    </nav>
+
+    <div class="menu-overlay">
+        <div class="menu-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="#founder">Vision</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+
+
+        <img src="assets/b84ab9b1f6117b4c6347d56f2b969381-removebg-preview.png" class="saturn-float" alt="Saturn">
+
+        <!-- Square Box with Text -->
+        <div class="square-box">
+            <video autoplay muted loop playsinline webkit-playsinline id="video-background">
+                <source src="assets/601db41a903250131e151a1cca773f92.mp4" type="video/mp4">
+            </video>
+            <img src="assets/textlogo.png" class="box-image" alt="Icon">
+            <div class="text-container">The HOME of innovative and exclusive tech experiences- Utopia GEU, Graphic Era University’s premier tech society.</div>
+            <div class="text-buttons">
+                <button onclick="window.location.href='events.html'">Events</button>
+                <button onclick="document.getElementById('team').scrollIntoView({behavior: 'smooth'})">Team</button>
+            </div>
+        </div>
+        <div class="classicdiv" style="padding-top: 20px;">
+            <div class="text-small" style="padding-left: 25px;">Dive into the Tech Stack</div>
+            <div class="text-big" style="padding-left: 25px;padding-right: 25px;">GEU AND THE TECH EXPERIENCE:</div>
+            <div class="text-exp" style="padding-left: 25px;padding-right: 25px;">Utopia leads GEU’s tech culture with
+                hands-on hackathons, IOT, AI, Cybersecurity workshops, esports tournaments, and cutting-edge events.
+            </div>
+            <div style="width:100%; padding-top: 20px;">
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <!-- In index.html -->
+                        <div class="carousel-slide">
+                            <img src="assets/img/home11.jpg" alt="Full width image">
+                            <div class="text-img">AWS Cloud Quest</div>
+                            <button class="image-button"
+                                onclick="window.location.href='events.html#aws-cloud-quest'">View Event ></button>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/img/home0.jpg" alt="Full width image">
+                            <div class="text-img">TECHSPRINT- Grafest Hackathon</div>
+                            <button class="image-button" onclick="window.location.href='events.html#techsprint'">View
+                                Event ></button>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="assets/img/DSC03824.jpg" alt="Full width image">
+                            <div class="text-img">Accolade 3.0</div>
+                            <button class="image-button" onclick="window.location.href='events.html#accolade'">View
+                                Event ></button>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="assets/img/IMG_5817.jpg" alt="Full width image">
+                            <div class="text-img">Coding Contest</div>
+                            <button class="image-button" onclick="window.location.href='events.html#algo-rush'">View
+                                Event ></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button class="simp-button" onclick="window.location.href='events.html'">Browse Events</button>
+        </div>
+        <div class="profdiv">
+            <video autoplay loop muted playsinline>
+                <source src="assets/66c4849a41a621bd6da4fe1613997885.mp4" type="video/mp4">
+            </video>
+            <div class="text-big" style="padding-left: 25px;padding-right: 25px; margin-top: 15px;">OUR PILLARS OF
+                GUIDANCE</div>
+
+
+            <div class="profiles-row">
+                <div class="profile-wrapper">
+                    <div class="image-prof">
+                        <img src="assets/img/president.png" alt="Sample image">
+                    </div>
+                    <div class="imgtext-small">Prof. (Dr) Kamal Ghanshala </div>
+                    <div class="imgtext-exp">Honourable President, Graphic Era Group of Institutions</div>
+                </div>
+            </div>
+            <div class="profiles-row">
+
+
+
+                <div class="profile-wrapper">
+                    <div class="image-prof">
+                        <img src="assets/img/DSC_0317.jpeg" alt="Sample image">
+                    </div>
+                    <div class="imgtext-small">Prof. (Dr) Devesh Pratap Singh</div>
+                    <div class="imgtext-exp">HoD, Department of CSE</div>
+                </div>
+
+
+                <!-- First Profile -->
+
+
+                <!-- Second Profile -->
+                <div class="profile-wrapper">
+                    <div class="image-prof2">
+                        <img src="assets/img/ankitsir.jpeg" alt="Sample image">
+                    </div>
+                    <div class="imgtext-small">Dr. Ankit Vishnoi</div>
+                    <div class="imgtext-exp">Faculty Coordinator</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="teamdiv" id="team">
+            <div class="solar">
+                <i class="mercury"></i>
+                <i class="venus"></i>
+                <i class="earth"></i>
+                <i class="mars"></i>
+                <i class="belt"></i>
+                <i class="jupiter"></i>
+                <i class="saturn"></i>
+                <i class="uranus"></i>
+                <i class="neptune"></i>
+            </div>
+            <div class="text-big"
+                style="padding-left: 25px;padding-right: 25px; padding-top: 20px; color: rgb(242, 242, 242);">MEET THE
+                TEAM BEHIND THE MISSION</div>
+            <div class="text-small" style="padding-left: 25px; color: #dcdcdc;">Core Committee 2026-27</div>
+            <div class="team-carousel-container">
+                <div class="team-carousel">
+
+
+                    <div class="team-member">
+                        <div class="image-team">
+                            <img src="assets/img/rithisha.jpeg" alt="Team member">
+                        </div>
+                        <div class="member-text">
+                            <div class="teamtext-small">Rithisha Jagotra</div>
+                            <div class="teamtext-exp">President</div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="image-team">
+                            <img src="assets/img/maitri.jpg" alt="Team member">
+                        </div>
+                        <div class="member-text">
+                            <div class="teamtext-small">Maitri Rawat</div>
+                            <div class="teamtext-exp">Content & Media Head</div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="image-team">
+                            <img src="assets/img/shreya.png" alt="Team member">
+                        </div>
+                        <div class="member-text">
+                            <div class="teamtext-small">Shreya Padmanabhan</div>
+                            <div class="teamtext-exp">Secretary-General</div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="image-team">
+                            <img src="assets/img/vanshika.jpg" alt="Team member">
+                        </div>
+                        <div class="member-text">
+                            <div class="teamtext-small">Vanshika Jain</div>
+                            <div class="teamtext-exp">Technical Head</div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="image-team">
+                            <img src="assets/img/tanishka.jpeg" alt="Team member">
+                        </div>
+                        <div class="member-text">
+                            <div class="teamtext-small">Tanishka Agarwal</div>
+                            <div class="teamtext-exp">Treasurer</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="team-buttons" style="margin-left: 20px;">
+                <button onclick="window.location.href='team.html'">Team Archives</button>
+            </div>
+        </div>
+
+        <!-- Team Highlights Section -->
+        <div class="highlights-section">
+            <div class="text-big" style="color: #ffffff; padding-left: 25px;">DRIVING INNOVATION</div>
+            <div class="text-small" style="color: #b0b0b0; padding-left: 25px; margin-bottom: 15px;">At Utopia,
+                innovation extends beyond events—it is reflected in the community we cultivate, the leaders we develop,
+                and the opportunities we create for aspiring technologists.</div>
+
+            <div class="highlights-container">
+                <!-- Left Side: Stats Column -->
+                <div class="highlights-stats-col">
+                    <!-- Card 1: Students Reached -->
+                    <div class="highlight-card horizontal">
+                        <div class="highlight-icon"><i class="fas fa-users"></i></div>
+                        <div class="highlight-info">
+                            <div class="highlight-number">1500+</div>
+                            <div class="highlight-title">Students Guided</div>
+                            <div class="highlight-desc">Empowered through hands-on bootcamps, workshops, and coding
+                                challenges.</div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Events Organized -->
+                    <div class="highlight-card horizontal">
+                        <div class="highlight-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="highlight-info">
+                            <div class="highlight-number">20+</div>
+                            <div class="highlight-title"> Events</div>
+                            <div class="highlight-desc">Organized high-impact events like AWS Cloud Quest, TechSprint,
+                                and Accolade.</div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Hackathons -->
+                    <div class="highlight-card horizontal">
+                        <div class="highlight-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="highlight-info">
+                            <div class="highlight-number">150+</div>
+                            <div class="highlight-title">Volunteers</div>
+                            <div class="highlight-desc">Dedicated student volunteers driving innovation, events, and community growth through teamwork and leadership
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Rotating Photo Gallery -->
+                <div class="highlights-gallery-col">
+                    <div class="highlights-gallery-wrapper">
+                        <div class="highlights-slides">
+                            <div class="gallery-slide active">
+                                <img src="assets/img/team1.jpeg" alt="Utopia Team Group">
+                                <div class="slide-caption"> Building tomorrow, together</div>
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="assets/img/team2.jpeg" alt="AWS Cloud Quest Event">
+                                <div class="slide-caption"> Building tomorrow, together</div>
+                            </div>
+                            
+                            <div class="gallery-slide">
+                                <img src="assets/img/team6.jpeg" alt="TechSprint Hackathon">
+                                <div class="slide-caption">Building tomorrow, together</div>
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="assets/img/team7.jpg" alt="TechSprint Hackathon">
+                                <div class="slide-caption">Building tomorrow, together</div>
+                            </div>
+                              <div class="gallery-slide">
+                                <img src="assets/img/T1.jpg" alt="TechSprint Hackathon">
+                                <div class="slide-caption">Building tomorrow, together</div>
+                            </div>
+                             <div class="gallery-slide">
+                                <img src="assets/img/T2.jpg" alt="TechSprint Hackathon">
+                                <div class="slide-caption">Building tomorrow, together</div>
+                            </div>
+                             <div class="gallery-slide">
+                                <img src="assets/img/T3.jpg" alt="TechSprint Hackathon">
+                                <div class="slide-caption">Building tomorrow, together</div>
+                            </div>
+                             <div class="gallery-slide">
+                                <img src="assets/img/T9.jpeg" alt="TechSprint Hackathon">
+                                <div class="slide-caption">Building tomorrow, together</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation Dots -->
+                    <div class="gallery-dots">
+                        <span class="dot active" onclick="setSlide(0)"></span>
+                        <span class="dot" onclick="setSlide(1)"></span>
+                        <span class="dot" onclick="setSlide(2)"></span>
+                        <span class="dot" onclick="setSlide(3)"></span>
+                        <span class="dot" onclick="setSlide(4)"></span>
+                        <span class="dot" onclick="setSlide(5)"></span>
+                        <span class="dot" onclick="setSlide(6)"></span>
+                         <span class="dot" onclick="setSlide(7)"></span>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="founderdiv" id="founder">
+            <div class="text-small" style="padding-left: 25px;">A note from the founders</div>
+            <div class="text-big" style="padding-left: 25px;padding-right: 25px; color: rgb(0, 0, 0);">ONWARD AND
+                FORWARD FOREVER</div>
+            <div class="text-exp" style="padding-left: 25px;padding-right: 25px; margin-bottom: 20px;">Ever since the
+                inception of the idea of Utopia, there has been eager anticipation and curiosity about what fuels this
+                exclusive society at the heart of technology and innovation.<br>
+                What began as a shared vision brought together a dedicated team: <strong>Harshvardhan Singh
+                    Bisht</strong> (B.Tech CSE 2021–25), <strong>Vedansh Goel</strong> (B.Tech CSE 2022–26),
+                <strong>Shikhar Rai</strong> (B.Tech CSE 2022–26), and <strong>Tejasv Kohli</strong> (B.Tech CSE
+                2022–26). Together, we built Utopia as a beacon of quality, effort, leadership, and exclusivity.<br>
+                These values are not just ideals — they are the foundation of everything we do. We remain committed to
+                upholding them in every step we take and every initiative we lead. As Utopia continues to evolve, these
+                principles will remain at its core, guiding us toward a future shaped by innovation and driven by
+                purpose.<br><br>
+                <strong>— The Founders of Utopia</strong>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <!-- Left side with logo and social icons -->
+                <div class="footer-left">
+                    <div class="logo-space">
+                        <!-- Logo image will go here -->
+                        <img src="assets/saturn-removebg-preview.png" alt="Logo" class="footer-logo">
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/utopia.geu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:utopiafest01@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/utopia-geu-7516ba364" class="social-icon"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="platform-name">
+                        GEU Utopia Socials
+                    </div>
+
+                    <p>© 2025-26 GEU Utopia all rights reserved</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAbyN7d2qTOk-iAVvQwQJMJvY4r2TL4ggQ",
+            authDomain: "utopia-cb385.firebaseapp.com",
+            projectId: "utopia-cb385",
+            storageBucket: "utopia-cb385.firebasestorage.app",
+            messagingSenderId: "214671896967",
+            appId: "1:214671896967:web:3fff9bd0ba8de5af66a322",
+            measurementId: "G-6EKXP35MT4"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+
+</html>

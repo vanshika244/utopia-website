@@ -1,0 +1,10 @@
+{
+  "hosting": {"site": "geuutopia",
+    "public": "website",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
